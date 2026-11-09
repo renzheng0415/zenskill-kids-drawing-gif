@@ -1,0 +1,490 @@
+{
+  "_comment": "EXAMPLE ONLY: coordinates for one castle drawing on a 724x724 source canvas. Replace assets, masks, pivots and review boxes for every new drawing. Assets are intentionally not bundled. Base must be inpainted under all removed sprites; foreground covers shoulder joints.",
+  "canvas": [
+    800,
+    1392
+  ],
+  "source_size": [
+    724,
+    724
+  ],
+  "photo": "assets/original.png",
+  "photo_bbox": [
+    48,
+    48,
+    752,
+    620
+  ],
+  "vignette_bbox": [
+    160,
+    839,
+    640,
+    1196
+  ],
+  "paper_color": [
+    246,
+    240,
+    228
+  ],
+  "title": {
+    "text": "Castle Friends",
+    "font": "assets/Caveat-Regular.ttf",
+    "size": 38,
+    "position": [
+      400,
+      1240
+    ],
+    "underline": [
+      325,
+      1284,
+      475,
+      1284
+    ],
+    "lock_bbox": [
+      0,
+      1220,
+      800,
+      1392
+    ]
+  },
+  "loop_frames": 72,
+  "frame_ms": 40,
+  "base": "assets/clean-inpainted-base.png",
+  "sprite_source": "assets/pigment-only.png",
+  "foreground_overlays": [
+    "assets/shoulder-covers.png"
+  ],
+  "lock_masks": {
+    "example_ground": {
+      "bbox": [
+        160,
+        1184,
+        639,
+        1195
+      ]
+    },
+    "example_wall_patch": {
+      "bbox": [
+        365,
+        1080,
+        422,
+        1120
+      ]
+    },
+    "example_right_staff": {
+      "polygon": [
+        [
+          607,
+          1015
+        ],
+        [
+          610,
+          1015
+        ],
+        [
+          625,
+          1163
+        ],
+        [
+          622,
+          1163
+        ]
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "flag_0",
+      "type": "flag",
+      "pivot": [
+        359,
+        207
+      ],
+      "mask": {
+        "bbox": [
+          359,
+          203,
+          420,
+          233
+        ]
+      },
+      "review_bbox": [
+        300,
+        850,
+        550,
+        1010
+      ],
+      "amplitude_deg": 12,
+      "cycles": 2,
+      "phase": 0,
+      "tip_ripple": 5,
+      "cloth_width": 55,
+      "width_range": [
+        0.8,
+        1.05
+      ]
+    },
+    {
+      "name": "flag_1",
+      "type": "flag",
+      "pivot": [
+        249,
+        317
+      ],
+      "mask": {
+        "bbox": [
+          249,
+          315,
+          298,
+          340
+        ]
+      },
+      "review_bbox": [
+        300,
+        850,
+        550,
+        1010
+      ],
+      "amplitude_deg": 11,
+      "cycles": 2,
+      "phase": 1.7,
+      "tip_ripple": 5,
+      "cloth_width": 55,
+      "width_range": [
+        0.8,
+        1.05
+      ]
+    },
+    {
+      "name": "flag_2",
+      "type": "flag",
+      "pivot": [
+        464,
+        324
+      ],
+      "mask": {
+        "bbox": [
+          464,
+          321,
+          512,
+          347
+        ]
+      },
+      "review_bbox": [
+        300,
+        850,
+        550,
+        1010
+      ],
+      "amplitude_deg": 13,
+      "cycles": 2,
+      "phase": 3.1,
+      "tip_ripple": 5,
+      "cloth_width": 55,
+      "width_range": [
+        0.8,
+        1.05
+      ]
+    },
+    {
+      "name": "left_arm",
+      "type": "rigid_rotate",
+      "pivot": [
+        164,
+        453
+      ],
+      "mask": {
+        "bbox": [
+          160,
+          390,
+          195,
+          469
+        ]
+      },
+      "review_bbox": [
+        230,
+        1000,
+        340,
+        1140
+      ],
+      "amplitude_deg": 23,
+      "cycles": 1,
+      "phase": 0,
+      "offset_deg": -4
+    },
+    {
+      "name": "right_arm",
+      "type": "rigid_rotate",
+      "pivot": [
+        577,
+        465
+      ],
+      "mask": {
+        "bbox": [
+          516,
+          417,
+          579,
+          475
+        ]
+      },
+      "review_bbox": [
+        480,
+        1000,
+        590,
+        1150
+      ],
+      "amplitude_deg": 20,
+      "cycles": 1,
+      "phase": 1.5,
+      "offset_deg": -20
+    },
+    {
+      "name": "flower_stem",
+      "type": "rigid_rotate",
+      "pivot": [
+        39,
+        616
+      ],
+      "mask": {
+        "bbox": [
+          10,
+          574,
+          66,
+          617
+        ]
+      },
+      "review_bbox": [
+        150,
+        1080,
+        240,
+        1210
+      ],
+      "amplitude_deg": 10,
+      "cycles": 1,
+      "phase": 2.3
+    },
+    {
+      "name": "flower_head",
+      "type": "rigid_rotate",
+      "pivot": [
+        36,
+        564
+      ],
+      "mask": {
+        "bbox": [
+          10,
+          529,
+          66,
+          574
+        ]
+      },
+      "review_bbox": [
+        150,
+        1080,
+        240,
+        1210
+      ],
+      "amplitude_deg": 3,
+      "cycles": 1,
+      "phase": 1.6,
+      "parent": "flower_stem"
+    },
+    {
+      "name": "star_0",
+      "type": "twinkle",
+      "pivot": [
+        360,
+        366
+      ],
+      "mask": {
+        "bbox": [
+          335,
+          341,
+          385,
+          391
+        ]
+      },
+      "review_bbox": [
+        360,
+        920,
+        490,
+        1090
+      ],
+      "cycles": 2,
+      "phase": 0,
+      "scale_range": [
+        0.75,
+        1.25
+      ],
+      "opacity_range": [
+        0.56,
+        1
+      ]
+    },
+    {
+      "name": "star_1",
+      "type": "twinkle",
+      "pivot": [
+        361,
+        419
+      ],
+      "mask": {
+        "bbox": [
+          336,
+          394,
+          386,
+          444
+        ]
+      },
+      "review_bbox": [
+        360,
+        920,
+        490,
+        1090
+      ],
+      "cycles": 2,
+      "phase": 1.8,
+      "scale_range": [
+        0.75,
+        1.25
+      ],
+      "opacity_range": [
+        0.56,
+        1
+      ]
+    },
+    {
+      "name": "star_2",
+      "type": "twinkle",
+      "pivot": [
+        463,
+        201
+      ],
+      "mask": {
+        "bbox": [
+          438,
+          176,
+          488,
+          226
+        ]
+      },
+      "review_bbox": [
+        360,
+        920,
+        490,
+        1090
+      ],
+      "cycles": 2,
+      "phase": 3.5,
+      "scale_range": [
+        0.75,
+        1.25
+      ],
+      "opacity_range": [
+        0.56,
+        1
+      ]
+    },
+    {
+      "name": "wing_0",
+      "type": "wing_flap",
+      "pivot": [
+        126,
+        262
+      ],
+      "mask": {
+        "bbox": [
+          78,
+          218,
+          120,
+          299
+        ]
+      },
+      "review_bbox": [
+        190,
+        900,
+        320,
+        1020
+      ],
+      "body_axis": [
+        126,
+        262
+      ],
+      "cycles": 2,
+      "phase": 0.0,
+      "scale_x_range": [
+        0.35,
+        1
+      ],
+      "bob": 6,
+      "drift": 5
+    },
+    {
+      "name": "wing_1",
+      "type": "wing_flap",
+      "pivot": [
+        600,
+        262
+      ],
+      "mask": {
+        "bbox": [
+          606,
+          218,
+          659,
+          299
+        ]
+      },
+      "review_bbox": [
+        500,
+        900,
+        630,
+        1020
+      ],
+      "body_axis": [
+        600,
+        262
+      ],
+      "cycles": 3,
+      "phase": 2.1,
+      "scale_x_range": [
+        0.35,
+        1
+      ],
+      "bob": 6,
+      "drift": 5
+    },
+    {
+      "name": "eyes",
+      "type": "blink",
+      "pivot": [
+        600,
+        425
+      ],
+      "mask": {
+        "bbox": [
+          580,
+          416,
+          621,
+          434
+        ]
+      },
+      "review_bbox": [
+        510,
+        1010,
+        600,
+        1090
+      ],
+      "closed_sprite": "assets/closed-eyes.png",
+      "peak": 0.64,
+      "closed_frames": 2,
+      "blend_frames": 1
+    }
+  ],
+  "_registration_note": "EXAMPLE V7 registration: source selections and pivots use the 724x724 art; source_crop [8,115,716,642] maps into vignette_bbox. Rectangle masks only illustrate selections: replace with exact pigment masks/polygons; review envelopes and architectural locks must be checked for this drawing.",
+  "source_crop": [
+    8,
+    115,
+    716,
+    642
+  ]
+}
